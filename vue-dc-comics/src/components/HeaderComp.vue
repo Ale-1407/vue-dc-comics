@@ -3,16 +3,36 @@
         <img src="../assets/img/dc-logo.png" alt="logo" class="logo">
         <nav>
             <ul>
-                <li>CHARACTERS</li>
-                <li class="active">COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <li>
+                   <a href="#">CHARACTERS</a> 
+                </li>
+                <li>
+                    <a href="#" class="active">COMICS</a> 
+                </li>
+                <li>
+                   <a href="#">MOVIES</a> 
+                </li>
+                <li>
+                   <a href="#">TV</a> 
+                </li>
+                <li>
+                  <a href="#">GAMES</a>  
+                </li>
+                <li>
+                   <a href="#">COLLECTIBLES</a> 
+                </li>
+                <li>
+                   <a href="#">VIDEOS</a> 
+                </li>
+                <li>
+                  <a href="#">FANS</a>  
+                </li>
+                <li>
+                   <a href="#">NEWS</a> 
+                </li>
+                <li>
+                   <a href="#">SHOP</a> 
+                </li>
             </ul>
         </nav>
     </header>
@@ -25,14 +45,9 @@ export default {
 </script>
 
 <style lang="scss">
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 header{
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -53,11 +68,17 @@ ul{
   }
 }
 
-.active{
-    color: dodgerblue;   
+a{
+    text-decoration: none;
+    color: black;
 }
 
+.active{
+    color: dodgerblue;
+}
+
+
 .logo{
-    height: 90px;
+    height: 80px;
 }
 </style>
