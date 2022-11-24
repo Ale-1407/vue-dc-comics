@@ -4,7 +4,7 @@
             <div class="content"></div> 
         </div>
         <div class="cont-card">
-          <div class="container">
+          <div class="container-card">
             <CardComp v-for="(elem, index) in comics" :key="index" :dettagliComics="elem" />
           </div>
             
@@ -165,7 +165,7 @@ main{
     background-color: rgba($color: #000000, $alpha: 0.9);
 }
 
-.container{
+.container-card{
   width: 80%;
   margin: auto;
   display: flex;
