@@ -45,31 +45,32 @@ main{
 }
 
 .cont-1{
-    background-color: black;
-    height: 130px;  
+    background-color: rgb(0, 0, 0, 0.9);
+    height: 15vh;  
     display: flex;
 }
 
 .content{
-    align-self: center;
-    text-align: left;
-    margin-left: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 9rem;
 }
 
 .cont-2{
     background-color: dodgerblue;
-    height: 140px;  
-
+    height: 15vh;  
 }
 
 .immagini{
     display: flex;
-    justify-content: space-around;
-    padding: 40px 0;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 4rem;
 }
 
 .immagini img{
-    height: 55px;
+    height: 45px;
 }
 
 .img-text{

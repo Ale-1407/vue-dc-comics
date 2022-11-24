@@ -7,7 +7,7 @@
                    <a href="#">CHARACTERS</a> 
                 </li>
                 <li>
-                    <a href="#" class="active">COMICS</a> 
+                    <a href="#">COMICS</a> 
                 </li>
                 <li>
                    <a href="#">MOVIES</a> 
@@ -44,10 +44,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 header{
-    padding: 15px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -73,12 +73,14 @@ a{
     color: black;
 }
 
-.active{
-    color: dodgerblue;
+a:hover {
+  color: dodgerblue;
+  border-bottom: 5px solid dodgerblue;
+  padding-bottom: 38px;
 }
-
 
 .logo{
     height: 80px;
+    margin-right: 9.5rem;
 }
 </style>
