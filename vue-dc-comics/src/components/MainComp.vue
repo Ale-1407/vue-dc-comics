@@ -54,7 +54,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 9rem;
+    width: 80%;
+    margin: auto;
 }
 
 .cont-2{

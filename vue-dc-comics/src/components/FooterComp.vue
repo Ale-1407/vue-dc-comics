@@ -1,7 +1,8 @@
 <template>
     <footer>
         <div class="cont-foot-1">
-            <div class="foot-list">
+            <div class="container">
+              <div class="foot-list">
                 <div>
                     <ul>
                         <li><h2>DC COMICS</h2></li>
@@ -45,16 +46,16 @@
                         <li> <span>DC Power Visa</span> </li>
                     </ul>
                 </div>
-            </div>
-            <div class="foot-img">
-                <img src="../assets/img/dc-logo-bg.png" alt="img">
-            </div>
+              </div>
+              <div class="foot-bg-logo"></div>
+            </div>  
         </div>
         <div class="cont-foot-2">
-            <div>
+            <div class="content-foot">
+              <div>
                 <button class="btn">SIGN-UP NOW!</button>
-            </div>
-            <div class="icons">
+              </div>
+              <div class="icons">
                 <ul>
                     <li> <h3>FOLLOW US</h3> </li>
                     <li> <img src="../assets/img/footer-facebook.png" alt=""> </li>
@@ -63,7 +64,8 @@
                     <li> <img src="../assets/img/footer-pinterest.png" alt=""> </li>
                     <li> <img src="../assets/img/footer-periscope.png" alt=""> </li>
                 </ul>
-            </div>
+               </div>  
+            </div>         
         </div>
     </footer>
 </template>
@@ -79,8 +81,14 @@ export default {
     height: 45vh;
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
+    display: flex;  
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 h2{
@@ -106,17 +114,18 @@ h2{
     display: flex;
 }
 
-.foot-img img{
-    height: -webkit-fill-available;
+.foot-bg-logo{
+    background-image: url('../assets/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40%;
 }
 
 .cont-foot-2{
     height: 11vh;
     background-color: rgba($color: #000000, $alpha: 0.8);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 9rem;
 }
 
 .btn{
@@ -136,4 +145,12 @@ h2{
 h3{
     color: dodgerblue;
 }
+
+.content-foot{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;  
+}
+
 </style>
