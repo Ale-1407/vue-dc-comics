@@ -110,6 +110,11 @@ h2{
 }  
 }
 
+.foot-list li:hover{
+    color: dodgerblue;
+    cursor: pointer;
+}
+
 .foot-list{
     display: flex;
 }
@@ -135,11 +140,20 @@ h2{
     color: white;
 }
 
+.btn:hover{
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
 .icons ul{
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.icons img:hover{
+    cursor: pointer;
 }
 
 h3{

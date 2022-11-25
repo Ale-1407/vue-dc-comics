@@ -164,9 +164,12 @@ main{
     font-size: 13px;
     gap: 10px;
 }
-
+.img-text:hover{
+  font-size: 15px;
+  cursor: pointer;
+}
 .etichetta-blu{
-  border: 1px solid dodgerblue;
+  border: 1px solid transparent;
   background-color: dodgerblue;
   padding: 10px;
   color: white;
@@ -176,12 +179,23 @@ main{
   font-size: 17px;
 }
 
+.etichetta-blu:hover, .load-btn:hover{
+  background-color: rgb(107, 177, 247);
+  cursor: pointer;
+  box-shadow: 0px 15px 20px rgba(107, 177, 247, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
 .btn-comics{
   text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .load-btn{
-  border: 1px solid dodgerblue;
+  border: 1px solid transparent;
   background-color: dodgerblue;
   padding: 10px;
   width: 13%;

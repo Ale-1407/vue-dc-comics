@@ -82,5 +82,6 @@ a:hover {
 .logo{
     height: 80px;
     margin-right: 9.5rem;
+    cursor: pointer;
 }
 </style>
