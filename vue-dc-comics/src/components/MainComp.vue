@@ -4,10 +4,14 @@
             <div class="content"></div> 
         </div>
         <div class="cont-card">
+          <button class="etichetta-blu">CURRENT SERIES</button>
           <div class="container-card">
             <CardComp v-for="(elem, index) in comics" :key="index" :dettagliComics="elem" />
+          </div> 
+          <div class="btn-comics">
+            <button class="load-btn">LOAD MORE</button>
           </div>
-            
+          
         </div>
         <div class="cont-2">
             <div class="immagini">
@@ -161,6 +165,30 @@ main{
     gap: 10px;
 }
 
+.etichetta-blu{
+  border: 1px solid dodgerblue;
+  background-color: dodgerblue;
+  padding: 10px;
+  color: white;
+  position: relative;
+  top: -25px;
+  left: 11%;
+  font-size: 17px;
+}
+
+.btn-comics{
+  text-align: center;
+}
+
+.load-btn{
+  border: 1px solid dodgerblue;
+  background-color: dodgerblue;
+  padding: 10px;
+  width: 13%;
+  color: white;
+  margin-bottom: 20px;
+}
+
 .cont-card{
     background-color: rgba($color: #000000, $alpha: 0.9);
 }
@@ -170,6 +198,5 @@ main{
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 35px 0;
 }
 </style>
